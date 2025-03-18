@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+</head>
+<body>
+    <script>
+
+        let a = prompt("Enter the coefficient a:");
+        let b = prompt("Enter the coefficient b:");
+        let c = prompt("Enter the coefficient c:");
+
+ 
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = parseFloat(c);
+
+     
+        let delta = b * b - 4 * a * c;
+
+        
+        if (delta >= 0) {
+            let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+          
+            alert("The roots are:\nx1 = " + x1 + "\nx2 = " + x2);
+
+            
+            console.log("The roots are:\nx1 = " + x1 + "\nx2 = " + x2);
+        } else {
+          
+            alert("No real solutions exist (delta is negative).");
+            console.log("No real solutions exist (delta is negative).");
+        }
+    </script>
+</body>
+</html>
